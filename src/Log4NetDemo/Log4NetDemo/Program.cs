@@ -1,9 +1,5 @@
-﻿using Log4NetLibrary;
+﻿using Log4NetExtension;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Log4NetDemo
 {
@@ -12,7 +8,7 @@ namespace Log4NetDemo
         static void Main(string[] args)
         {
             LogHelper.Initialize();
-            LogHelper.WriteInfo(new Log() { sStaffValue = 123 });
+            LogHelper.WriteInfo(new Log() { sStaffValue = new Random().Next(100, 10000) });
         }
     }
 }

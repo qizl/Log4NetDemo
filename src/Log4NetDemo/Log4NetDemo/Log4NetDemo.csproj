@@ -38,6 +38,7 @@
       <HintPath>..\..\dll\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -55,9 +56,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Log4NetLibrary\Log4NetLibrary.csproj">
+    <ProjectReference Include="..\Log4NetExtension\Log4NetExtension.csproj">
       <Project>{8fabe047-0845-4188-aea8-2cc0a09385d0}</Project>
-      <Name>Log4NetLibrary</Name>
+      <Name>Log4NetExtension</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

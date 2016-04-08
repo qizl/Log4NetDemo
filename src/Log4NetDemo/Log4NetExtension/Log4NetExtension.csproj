@@ -7,8 +7,8 @@
     <ProjectGuid>{8FABE047-0845-4188-AEA8-2CC0A09385D0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Log4NetLibary</RootNamespace>
-    <AssemblyName>Log4NetLibary</AssemblyName>
+    <RootNamespace>Log4NetExtension</RootNamespace>
+    <AssemblyName>Log4NetExtension</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

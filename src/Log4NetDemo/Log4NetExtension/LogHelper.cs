@@ -2,7 +2,7 @@
 using log4net.Config;
 using System;
 
-namespace Log4NetLibrary
+namespace Log4NetExtension
 {
     public class LogHelper
     {

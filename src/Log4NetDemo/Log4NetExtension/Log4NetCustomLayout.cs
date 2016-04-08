@@ -10,7 +10,7 @@ using log4net.Util;
 using log4net.Layout;
 using log4net.Layout.Pattern;
 
-namespace Log4NetLibrary
+namespace Log4NetExtension
 {
     public class Log4NetCustomLayout : log4net.Layout.LayoutSkeleton
     {

@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4NetDemo", "Log4NetDemo\Log4NetDemo.csproj", "{9C04641A-D407-44B0-92E5-8548231A6482}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4NetLibrary", "Log4NetLibrary\Log4NetLibrary.csproj", "{8FABE047-0845-4188-AEA8-2CC0A09385D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4NetExtension", "Log4NetExtension\Log4NetExtension.csproj", "{8FABE047-0845-4188-AEA8-2CC0A09385D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

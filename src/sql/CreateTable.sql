@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[Log4NetTest](
+	[dtDate] [datetime] NULL,
+	[sThread] [nvarchar](100) NULL,
+	[SLevel] [nvarchar](200) NULL,
+	[sLogger] [nvarchar](500) NULL,
+	[sMessage] [nvarchar](300) NULL,
+	[sException] [nvarchar](4000) NULL,
+	[sStaffValue] [bigint] NULL
+) ON [PRIMARY]

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Log4NetLibrary
+namespace Log4NetExtension
 {
     public class Log
     {

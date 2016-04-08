@@ -3,7 +3,7 @@ using log4net.Appender;
 using log4net;
 using System.Configuration;
 
-namespace Log4NetLibrary
+namespace Log4NetExtension
 {
     /// <summary>
     /// http://issues.apache.org/jira/browse/LOG4NET-88
