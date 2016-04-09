@@ -8,7 +8,7 @@ namespace Log4NetDemo
         static void Main(string[] args)
         {
             LogHelper.Initialize();
-            LogHelper.WriteInfo(new Log() { sStaffValue = new Random().Next(100, 10000) });
+            LogHelper.WriteInfo("hello word!", "localhost", new Random().Next(100, 10000));
         }
     }
 }

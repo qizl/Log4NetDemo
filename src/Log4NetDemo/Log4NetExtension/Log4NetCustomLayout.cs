@@ -5,7 +5,6 @@ using System.Collections;
 using System.IO;
 
 using log4net.Core;
-//using log4net.Layout.Pattern;
 using log4net.Util;
 using log4net.Layout;
 using log4net.Layout.Pattern;
@@ -15,7 +14,6 @@ namespace Log4NetExtension
     public class Log4NetCustomLayout : log4net.Layout.LayoutSkeleton
     {
         #region Constants
-
         /// <summary>
         /// Default pattern string for log output. 
         /// </summary>
@@ -88,6 +86,9 @@ namespace Log4NetExtension
         {
             s_globalRulesRegistry = new Hashtable(1);
             s_globalRulesRegistry.Add("sStaffValue", typeof(sStaffValuePatternConverter));
+            s_globalRulesRegistry.Add("sMessage", typeof(sMessagePatternConverter));
+            s_globalRulesRegistry.Add("sIP", typeof(sIPPatternConverter));
+            s_globalRulesRegistry.Add("sException", typeof(sExceptionConverter));
         }
 
         #endregion Static Constructor
@@ -377,6 +378,33 @@ namespace Log4NetExtension
             Log log = loggingEvent.MessageObject as Log;
             if (log != null)
                 writer.Write(log.sStaffValue);
+        }
+    }
+    internal sealed class sMessagePatternConverter : PatternLayoutConverter
+    {
+        override protected void Convert(TextWriter writer, LoggingEvent loggingEvent)
+        {
+            Log log = loggingEvent.MessageObject as Log;
+            if (log != null)
+                writer.Write(log.sMessage);
+        }
+    }
+    internal sealed class sIPPatternConverter : PatternLayoutConverter
+    {
+        override protected void Convert(TextWriter writer, LoggingEvent loggingEvent)
+        {
+            Log log = loggingEvent.MessageObject as Log;
+            if (log != null)
+                writer.Write(log.sIP);
+        }
+    }
+    internal sealed class sExceptionConverter : PatternLayoutConverter
+    {
+        override protected void Convert(TextWriter writer, LoggingEvent loggingEvent)
+        {
+            Log log = loggingEvent.MessageObject as Log;
+            if (log != null)
+                writer.Write(log.sException);
         }
     }
 }
