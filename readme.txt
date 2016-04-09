@@ -1,0 +1,1 @@
+log4net 示例，实现配置自定义字段写入sqlserver数据库。
